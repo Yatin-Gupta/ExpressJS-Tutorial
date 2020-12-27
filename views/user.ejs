@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <header>
+        <!-- Notice sign used here <%- -->
+        <%- include('partials/header.ejs') %>
+    </header>
+    <p>You are viewing profile of <%= name %></p>
+    <p>Good In: </p>
+    <ul>
+        <% for(const skill of skills) { %>
+            <li><%= skill %></li>
+        <% } %>
+    </ul>
+</body>
+</html>

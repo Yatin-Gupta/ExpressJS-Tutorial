@@ -1,0 +1,9 @@
+/* External stylesheet will be server publicly */
+/* Note: In NodeJS, you cannot access any content directly by providing file name like /index.html */
+/* It will not identify path and will not take you anywhere */
+/* To serve images, external stylesheets we want one path or directory that should be publicly accessible */
+/* To create that directory one need to tell express to serve its content staticly
+We will made public directory as statically served directory */
+p {
+  color: brown;
+}
